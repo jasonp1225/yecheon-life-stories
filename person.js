@@ -7,10 +7,9 @@
   const requestedId = new URLSearchParams(window.location.search).get('person');
   const requestedMember = new URLSearchParams(window.location.search).get('member');
   const sourcePerson = catalog.people.find(item => item.id === requestedId);
-  const hasMemberStories = !requestedMember || catalog.episodes.some(item => item.sourceId === requestedId && item.names.includes(requestedMember));
-  const person = sourcePerson && (!requestedMember || sourcePerson.names.includes(requestedMember)) && hasMemberStories ? sourcePerson : null;
+  const person = sourcePerson && (!requestedMember || sourcePerson.names.includes(requestedMember)) ? sourcePerson : null;
   const memberName = person?.names.includes(requestedMember) ? requestedMember : '';
-  const displayedNames = person?.names.filter(name => catalog.episodes.some(item => item.sourceId === person.id && item.names.includes(name))) || [];
+  const displayedNames = person?.names || [];
   const displayName = memberName || displayedNames.join(' · ');
   const episodes = person ? catalog.episodes.filter(item => item.sourceId === person.id && (!memberName || item.names.includes(memberName))) : [];
   let readingIndex = -1;
@@ -98,14 +97,13 @@
   });
 
   if (!person) {
-    const excluded = catalog.excludedPeople?.find(item => item.id === requestedId);
     document.title = '인물을 찾을 수 없습니다 · 예천의 장면들';
     $('personTitle').textContent = '인물을 찾을 수 없습니다';
     $('personPlace').textContent = '지도에서 인물을 선택해 그분의 이야기 페이지를 열어 주세요.';
     $('storiesHeading').hidden = true;
     $('empty').hidden = false;
     $('emptyTitle').textContent = '선택한 인물 정보가 없습니다.';
-    $('emptyText').textContent = excluded ? '이 채록은 개인 생애사와 일생의례를 바탕으로 세 편 이상을 구성할 근거가 부족해 이번 전시에서 제외했습니다. 지도에서 다른 인물의 이야기를 만나 보세요.' : '주소가 바뀌었거나 인물이 선택되지 않았습니다. 지도로 돌아가 이름을 다시 선택해 주세요.';
+    $('emptyText').textContent = '주소가 바뀌었거나 인물이 선택되지 않았습니다. 지도로 돌아가 이름을 다시 선택해 주세요.';
     return;
   }
 
@@ -113,9 +111,9 @@
   $('personTitle').textContent = displayName;
   window.StoryContextUI?.renderProfile(person, memberName);
   $('storiesHeading').textContent = !memberName && displayedNames.length > 1 ? '함께 들려준 이야기' : '이분의 이야기';
-  $('personCount').append(element('strong', '', episodes.length + '편'), element('span', '', '선별한 이야기'));
-  $('storyCount').textContent = '만화 ' + episodes.length + '편';
-  $('footerCount').textContent = displayName + ' · 만화 ' + episodes.length + '편';
+  $('personCount').append(element('strong', '', episodes.length ? episodes.length + '편' : '인물 소개'), element('span', '', episodes.length ? '선별한 이야기' : '채록에 남은 삶'));
+  $('storyCount').textContent = episodes.length ? '만화 ' + episodes.length + '편' : '인적사항과 생애사';
+  $('footerCount').textContent = displayName + (episodes.length ? ' · 만화 ' + episodes.length + '편' : ' · 인물 소개');
 
   const source = map?.sources.find(item => item.sourceId === person.id);
   const region = source?.region || 'unknown';
@@ -134,8 +132,8 @@
   $('stories').replaceChildren(...episodes.map(makeCard));
   if (!episodes.length) {
     $('empty').hidden = false;
-    $('emptyTitle').textContent = '이번 선별에 수록한 작품이 없습니다.';
-    $('emptyText').textContent = '이 채록의 기존 작품은 일생의례와 삶의 큰 사건을 중심으로 한 이번 선별 기준과 맞지 않아 수록하지 않았습니다. 자세한 이유는 전체 선별 기록에서 확인할 수 있습니다.';
-    $('reviewLink').hidden = false;
+    $('storiesHeading').textContent = '수록 만화 안내';
+    $('emptyTitle').textContent = '현재 수록한 만화가 없습니다.';
+    $('emptyText').textContent = '이분의 인적사항과 간략한 생애사는 위의 인물 소개와 삶의 발자취에서 읽으실 수 있습니다.';
   }
 })();

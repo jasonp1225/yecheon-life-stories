@@ -37,7 +37,7 @@
     const sources=map.sources.filter(source=>unknown?!source.region:source.region===name).filter(source=>catalog.people.some(person=>person.id===source.sourceId));
     const entries=sources.flatMap(source=>{
       const person=catalog.people.find(person=>person.id===source.sourceId);
-      return person.names.map(memberName=>({source,person,memberName,count:catalog.episodes.filter(episode=>episode.sourceId===person.id && episode.names.includes(memberName)).length})).filter(entry=>entry.count>0);
+      return person.names.map(memberName=>({source,person,memberName,count:catalog.episodes.filter(episode=>episode.sourceId===person.id && episode.names.includes(memberName)).length}));
     });
     select.value=unknown?'':name;
     const total=sources.reduce((n,source)=>n+catalog.episodes.filter(e=>e.sourceId===source.sourceId).length,0);
@@ -46,10 +46,10 @@
     const list=document.getElementById('regionPeople');list.replaceChildren();
     for(const {source,person,memberName,count} of entries){
       const button=document.createElement('a');button.href='person.html?person='+encodeURIComponent(person.id)+'&member='+encodeURIComponent(memberName);button.className='region-person';
-      button.setAttribute('aria-label',memberName+' 작품 보기, '+count+'편');
+      button.setAttribute('aria-label',count?memberName+' 작품 보기, '+count+'편':memberName+' 인물 소개 보기');
       const body=document.createElement('span'),title=document.createElement('strong'),detail=document.createElement('small'),badge=document.createElement('span');
       title.textContent=memberName;detail.textContent=source.placeLabel||'채록 인물';
-      badge.className='region-person-count';badge.textContent='만화 '+count+'편 →';
+      badge.className='region-person-count';badge.textContent=count?'만화 '+count+'편 →':'인물 소개 →';
       body.append(title,detail);button.append(body,badge);button.addEventListener('click',()=>commit(name));list.append(button);
     }
     const empty=document.getElementById('regionEmpty');empty.hidden=!!sources.length;

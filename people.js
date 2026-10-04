@@ -11,7 +11,7 @@
       count:catalog.episodes.filter(episode=>episode.sourceId===person.id && episode.names.includes(name)).length,
       region:place?.region || 'unknown', placeLabel:place?.placeLabel || '읍·면의 원문 근거 미확인',
       searchable:normalize([name, ...(person.aliases || [])].join(' '))
-    })).filter(person=>person.count>0);
+    }));
   });
   function node(tag, className, text) {
     const element = document.createElement(tag);
@@ -40,12 +40,12 @@
     selected.forEach(person => {
       const card = node('a', 'directory-person' + (!person.count ? ' no-stories' : ''));
       card.href = 'person.html?person=' + encodeURIComponent(person.id) + '&member=' + encodeURIComponent(person.memberName);
-      card.setAttribute('aria-label', person.label + ', ' + person.count + '편, 인물 이야기 페이지 열기');
+      card.setAttribute('aria-label', person.count ? person.label + ', ' + person.count + '편, 인물 이야기 페이지 열기' : person.label + ', 인물 소개 페이지 열기');
       const head = node('div', 'directory-person-heading');
-      head.append(node('h2', '', person.label), node('span', 'directory-person-count', person.count + '편'));
+      head.append(node('h2', '', person.label), node('span', 'directory-person-count', person.count ? person.count + '편' : '인물 소개'));
       card.append(head, node('p', 'directory-place', person.placeLabel));
-      if (person.names.length > 1) card.append(node('p', 'directory-joint', '공동 채록 · 이분의 경험으로 선별'));
-      card.append(node('span', 'directory-person-link', person.count ? '이야기 읽기 →' : '선별 기록 보기 →'));
+      if (person.names.length > 1) card.append(node('p', 'directory-joint', person.count ? '공동 채록 · 이분의 경험으로 선별' : '공동 채록 · 인적사항과 생애사'));
+      card.append(node('span', 'directory-person-link', person.count ? '이야기 읽기 →' : '인물 소개 보기 →'));
       cards.append(card);
     });
     $('directoryGrid').replaceChildren(cards);

@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "mappingBasis": "원문 근거 및 사용자의 지역 추가 확인",
   "checkedDate": "2026-10-04",
-  "sourceCount": 22,
+  "sourceCount": 25,
   "episodeCount": 74,
-  "confirmedSourceCount": 22,
+  "confirmedSourceCount": 25,
   "unconfirmedSourceIds": [],
   "regions": [
     {
@@ -83,9 +83,10 @@
       "currentRegion": "용궁면",
       "sourceIds": [
         "kim_jeongae",
+        "yun_changrak",
         "eom_jongpil"
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "episodeCount": 6
     },
     {
@@ -100,8 +101,10 @@
     {
       "mapRegion": "호명면",
       "currentRegion": "호명읍",
-      "sourceIds": [],
-      "sourceCount": 0,
+      "sourceIds": [
+        "lee_ogyo"
+      ],
+      "sourceCount": 1,
       "episodeCount": 0
     },
     {
@@ -118,9 +121,10 @@
       "mapRegion": "풍양면",
       "currentRegion": "풍양면",
       "sourceIds": [
+        "choi_eunja",
         "kim_byeonghui"
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "episodeCount": 4
     }
   ],
@@ -212,15 +216,40 @@
       "note": "출생지는 감천면 진평1동이나, 예천읍으로 혼인·정착했다는 P0014–P0017을 기준으로 채록을 예천읍에 연결했다."
     },
     {
+      "sourceId": "choi_eunja",
+      "region": "풍양면",
+      "mapRegion": "풍양면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "최은자"
+      ],
+      "displayLabel": "최은자",
+      "episodeCount": 0,
+      "sourceFiles": [
+        "[1차채록] 260708 풍양면 노인복지회관 최은자.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록] 260708 풍양면 노인복지회관 최은자.hwp",
+          "paragraph": "P0001",
+          "quote": "260708 풍양면 노인복지회관 최은자"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
       "sourceId": "lee_sangbae",
       "region": "개포면",
       "mapRegion": "개포면",
       "status": "confirmed",
       "statusLabel": "확정",
       "names": [
-        "이상배"
+        "이상배",
+        "손순희"
       ],
-      "displayLabel": "이상배",
+      "displayLabel": "이상배 · 손순희",
       "episodeCount": 3,
       "sourceFiles": [
         "[1차채록] 260731 풍정라디오 이상배.hwp"
@@ -315,6 +344,61 @@
         }
       ],
       "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "yun_changrak",
+      "region": "용궁면",
+      "mapRegion": "용궁면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "윤창락"
+      ],
+      "displayLabel": "윤창락",
+      "episodeCount": 0,
+      "sourceFiles": [
+        "[1차채록]260723 대은1리 윤창락.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록]260723 대은1리 윤창락.hwp",
+          "paragraph": "P0082",
+          "quote": "윤창락 \n08:30\n지금은 안 하지 새 젊은 이장이 들어와서 하고 있고 1년째 이장을 하면서 그 면 단위 이래 보면은 2장 20개 우리 용궁면이 20개 분학이니까 20개 2장이 모여가지고 내가 곡에서 이장협의회장을 한 또 7년을 했다고 이장하면서 그래 그래 해 나오다가 이제 이장의 안 하니까 그것도 그만두고 이제 뭐 집에 일에만 열심히 하고 있지."
+        }
+      ],
+      "note": "수록 만화는 0편이지만 원문과 이름·지역 정보는 유지한다."
+    },
+    {
+      "sourceId": "lee_ogyo",
+      "region": "호명읍",
+      "mapRegion": "호명면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "이오교"
+      ],
+      "displayLabel": "이오교",
+      "episodeCount": 0,
+      "sourceFiles": [
+        "[1차채록]260723 선몽대 이오교.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록]260723 선몽대 이오교.hwp",
+          "paragraph": "P0023",
+          "quote": "이오교 \n12:35\n나는 호명 백송이고 네네네 호명"
+        },
+        {
+          "kind": "official_location",
+          "title": "예천군 호명읍 연혁",
+          "url": "https://www.ycg.kr/open.content/homyeong/introduction/history/",
+          "summary": "2024년 2월 1일 호명읍 승격을 명시한다. 첨부 지도상 호명면의 현재 명칭이다.",
+          "checkedDate": "2026-10-04"
+        }
+      ],
+      "note": "원문은 호명 백송으로 명시하며, 현재 행정명은 호명읍이다. 첨부 지도에 표기된 호명면과 같은 지역 선택 항목에 연결한다. 예천군 호명읍 연혁은 2024-02-01 읍 승격을 명시한다."
     },
     {
       "sourceId": "seokmun_house",
