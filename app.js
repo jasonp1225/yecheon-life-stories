@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const data=window.STORY_CATALOG, $=id=>document.getElementById(id);
-  const state={query:'',topic:''};let visible=[],readingId='',lastTrigger=null;
+  const state={query:'',topic:'',names:[...data.people,...(data.excludedPeople||[])].flatMap(person=>person.names)};let visible=[],readingId='',lastTrigger=null;
   function el(tag,cls,text){const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x;}
   function reset(){state.query='';state.topic='';$('searchInput').value='';render();}
   function makeTopics(){for(const name of ['전체 주제',...data.topics]){const b=el('button','topic',name);b.type='button';b.dataset.topic=name==='전체 주제'?'':name;b.onclick=()=>{state.topic=b.dataset.topic;render();};$('topics').append(b);}}

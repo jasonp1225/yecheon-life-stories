@@ -5,8 +5,14 @@
   const map = window.YECHEON_MAP;
   const $ = id => document.getElementById(id);
   const requestedId = new URLSearchParams(window.location.search).get('person');
-  const person = catalog.people.find(item => item.id === requestedId);
-  const episodes = person ? catalog.episodes.filter(item => item.sourceId === person.id) : [];
+  const requestedMember = new URLSearchParams(window.location.search).get('member');
+  const sourcePerson = catalog.people.find(item => item.id === requestedId);
+  const hasMemberStories = !requestedMember || catalog.episodes.some(item => item.sourceId === requestedId && item.names.includes(requestedMember));
+  const person = sourcePerson && (!requestedMember || sourcePerson.names.includes(requestedMember)) && hasMemberStories ? sourcePerson : null;
+  const memberName = person?.names.includes(requestedMember) ? requestedMember : '';
+  const displayedNames = person?.names.filter(name => catalog.episodes.some(item => item.sourceId === person.id && item.names.includes(name))) || [];
+  const displayName = memberName || displayedNames.join(' · ');
+  const episodes = person ? catalog.episodes.filter(item => item.sourceId === person.id && (!memberName || item.names.includes(memberName))) : [];
   let readingIndex = -1;
   let lastTrigger = null;
 
@@ -92,23 +98,24 @@
   });
 
   if (!person) {
+    const excluded = catalog.excludedPeople?.find(item => item.id === requestedId);
     document.title = '인물을 찾을 수 없습니다 · 예천의 장면들';
     $('personTitle').textContent = '인물을 찾을 수 없습니다';
     $('personPlace').textContent = '지도에서 인물을 선택해 그분의 이야기 페이지를 열어 주세요.';
     $('storiesHeading').hidden = true;
     $('empty').hidden = false;
     $('emptyTitle').textContent = '선택한 인물 정보가 없습니다.';
-    $('emptyText').textContent = '주소가 바뀌었거나 인물이 선택되지 않았습니다. 지도로 돌아가 이름을 다시 선택해 주세요.';
+    $('emptyText').textContent = excluded ? '이 채록은 개인 생애사와 일생의례를 바탕으로 세 편 이상을 구성할 근거가 부족해 이번 전시에서 제외했습니다. 지도에서 다른 인물의 이야기를 만나 보세요.' : '주소가 바뀌었거나 인물이 선택되지 않았습니다. 지도로 돌아가 이름을 다시 선택해 주세요.';
     return;
   }
 
-  document.title = person.label + ' · 예천의 장면들';
-  $('personTitle').textContent = person.label;
-  window.StoryContextUI?.renderProfile(person);
-  $('storiesHeading').textContent = person.names.length > 1 ? '함께 들려준 이야기' : '이분의 이야기';
+  document.title = displayName + ' · 예천의 장면들';
+  $('personTitle').textContent = displayName;
+  window.StoryContextUI?.renderProfile(person, memberName);
+  $('storiesHeading').textContent = !memberName && displayedNames.length > 1 ? '함께 들려준 이야기' : '이분의 이야기';
   $('personCount').append(element('strong', '', episodes.length + '편'), element('span', '', '선별한 이야기'));
   $('storyCount').textContent = '만화 ' + episodes.length + '편';
-  $('footerCount').textContent = person.label + ' · 만화 ' + episodes.length + '편';
+  $('footerCount').textContent = displayName + ' · 만화 ' + episodes.length + '편';
 
   const source = map?.sources.find(item => item.sourceId === person.id);
   const region = source?.region || 'unknown';

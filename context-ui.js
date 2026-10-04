@@ -23,12 +23,12 @@
       return block;
     });
   }
-  function renderProfile(person) {
+  function renderProfile(person, memberName) {
     const profile = window.STORY_CONTEXT?.profiles[person.id];
     const metadata = $('personMetadata'), biography = $('personBiography');
     if (!profile || !metadata || !biography) return;
     const facts = [], biographies = [], allReferences = [];
-    for (const member of profile.members) {
+    for (const member of profile.members.filter(member => (!memberName || member.name === memberName) && window.STORY_CATALOG.episodes.some(episode => episode.sourceId === person.id && episode.names.includes(member.name)))) {
       const group = node('div', 'profile-facts');
       if (profile.members.length > 1) group.append(node('strong', 'profile-facts-name', member.name));
       const list = node('dl', 'profile-facts-list');

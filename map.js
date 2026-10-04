@@ -34,31 +34,29 @@
     if(chosenRegion===name)return;
     chosenRegion=name;
     const unknown=name==='unknown';
-    const sources=map.sources.filter(source=>unknown?!source.region:source.region===name);
+    const sources=map.sources.filter(source=>unknown?!source.region:source.region===name).filter(source=>catalog.people.some(person=>person.id===source.sourceId));
+    const entries=sources.flatMap(source=>{
+      const person=catalog.people.find(person=>person.id===source.sourceId);
+      return person.names.map(memberName=>({source,person,memberName,count:catalog.episodes.filter(episode=>episode.sourceId===person.id && episode.names.includes(memberName)).length})).filter(entry=>entry.count>0);
+    });
     select.value=unknown?'':name;
-    const total=sources.reduce((n,source)=>n+window.STORY_CATALOG.episodes.filter(e=>e.sourceId===source.sourceId).length,0);
+    const total=sources.reduce((n,source)=>n+catalog.episodes.filter(e=>e.sourceId===source.sourceId).length,0);
     document.getElementById('regionTitle').textContent=unknown?'지역 미확인':name;
-    document.getElementById('regionCount').textContent=sources.length+'건의 채록 · '+total+'편';
+    document.getElementById('regionCount').textContent=entries.length+'명의 인물 · '+total+'편';
     const list=document.getElementById('regionPeople');list.replaceChildren();
-    for(const source of sources){
-      const person=window.STORY_CATALOG.people.find(p=>p.id===source.sourceId);
-      if(!person)continue;
-      const count=window.STORY_CATALOG.episodes.filter(e=>e.sourceId===person.id).length;
-      const button=document.createElement('a');button.href='person.html?person='+encodeURIComponent(person.id);button.className='region-person';
-      button.setAttribute('aria-label',person.label+' 작품 보기, '+count+'편');
+    for(const {source,person,memberName,count} of entries){
+      const button=document.createElement('a');button.href='person.html?person='+encodeURIComponent(person.id)+'&member='+encodeURIComponent(memberName);button.className='region-person';
+      button.setAttribute('aria-label',memberName+' 작품 보기, '+count+'편');
       const body=document.createElement('span'),title=document.createElement('strong'),detail=document.createElement('small'),badge=document.createElement('span');
-      title.textContent=person.label;
-      detail.textContent=!count?'채록 확인 · 이번 선별에 수록한 작품 없음':source.placeLabel||'채록 인물';
-      badge.className='region-person-count';badge.textContent=count?'만화 '+count+'편 →':'선별 이유 →';
-      body.append(title,detail);button.append(body,badge);
-      button.addEventListener('click',()=>commit(name));
-      list.append(button);
+      title.textContent=memberName;detail.textContent=source.placeLabel||'채록 인물';
+      badge.className='region-person-count';badge.textContent='만화 '+count+'편 →';
+      body.append(title,detail);button.append(body,badge);button.addEventListener('click',()=>commit(name));list.append(button);
     }
     const empty=document.getElementById('regionEmpty');empty.hidden=!!sources.length;
     document.getElementById('regionEmptyText').textContent=unknown?'모든 채록의 지역이 확인되었습니다.':'이 지역에 연결할 수 있는 채록이 현재 모음에는 없습니다. 전체 목록에서는 다른 지역의 이야기를 볼 수 있습니다.';
   }
   select.addEventListener('change',()=>{if(select.value)commit(select.value);});
-  const unknown=map.sources.filter(source=>!source.region);
+  const unknown=map.sources.filter(source=>!source.region && catalog.people.some(person=>person.id===source.sourceId));
   const unknownButton=document.getElementById('unknownRegion');
   unknownButton.hidden=!unknown.length;unknownButton.textContent='지역 미확인 채록 '+unknown.length+'건 보기';unknownButton.onclick=()=>commit('unknown');
   const requested=new URLSearchParams(window.location.search).get('region');
