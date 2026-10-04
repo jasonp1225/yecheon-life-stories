@@ -67,6 +67,7 @@
       block.append(element('cite', '', citation), element('blockquote', '', reference.quote));
       return block;
     }));
+    window.StoryContextUI?.renderEpisode(episode);
     $('readerPosition').textContent = (index + 1) + ' / ' + episodes.length;
     $('previousStory').disabled = index === 0;
     $('nextStory').disabled = index === episodes.length - 1;
@@ -103,6 +104,7 @@
 
   document.title = person.label + ' · 예천의 장면들';
   $('personTitle').textContent = person.label;
+  window.StoryContextUI?.renderProfile(person);
   $('storiesHeading').textContent = person.names.length > 1 ? '함께 들려준 이야기' : '이분의 이야기';
   $('personCount').append(element('strong', '', episodes.length + '편'), element('span', '', '선별한 이야기'));
   $('storyCount').textContent = '만화 ' + episodes.length + '편';
