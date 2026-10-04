@@ -61,6 +61,7 @@
   const unknown=map.sources.filter(source=>!source.region);
   const unknownButton=document.getElementById('unknownRegion');
   unknownButton.hidden=!unknown.length;unknownButton.textContent='지역 미확인 채록 '+unknown.length+'건 보기';unknownButton.onclick=()=>commit('unknown');
-  const requestedRegion=new URLSearchParams(window.location.search).get('region');
+  const requested=new URLSearchParams(window.location.search).get('region');
+  const requestedRegion=requested==='호명면'?'호명읍':requested;
   commit(requestedRegion==='unknown'||map.regions.some(region=>region.name===requestedRegion)?requestedRegion:'예천읍');
 })();
