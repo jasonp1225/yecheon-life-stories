@@ -18,10 +18,8 @@
     const path=document.createElementNS(ns,'path');path.setAttribute('d',region.path);
     const label=document.createElementNS(ns,'text');label.setAttribute('x',region.label[0]);label.setAttribute('y',region.label[1]);label.textContent=region.name;
     group.append(path,label);svg.append(group);
-    const choose=()=>show(region.name);
     const activate=()=>{commit(region.name);if(window.matchMedia('(max-width:780px)').matches)document.querySelector('.region-panel').scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});};
-    group.addEventListener('pointermove',event=>{if(event.pointerType!=='touch')choose();});
-    group.addEventListener('focus',choose);group.addEventListener('click',activate);
+    group.addEventListener('click',activate);
     group.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();activate();}});
     select.add(new Option(region.name,region.name));
   }
