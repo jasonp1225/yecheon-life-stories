@@ -1,0 +1,3 @@
+@media (min-width: 541px) and (max-width: 1199px) {
+  .story-grid { grid-template-columns: minmax(0, 1fr); }
+}

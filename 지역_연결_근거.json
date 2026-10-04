@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 1,
+  "mappingBasis": "채록 장소/원문에서 확인한 정착 지역을 읍·면 단위로 연결. 출생지·혼인 전 거주지·일시적 생애 장소를 현재 채록 지역으로 대체하지 않음. 지명만 있는 경우 공식 소재지 자료로 보완. 확인되지 않은 지역은 비워 둠.",
+  "checkedDate": "2026-10-04",
+  "sourceCount": 25,
+  "episodeCount": 62,
+  "confirmedSourceCount": 24,
+  "unconfirmedSourceIds": [
+    "yun_sunok"
+  ],
+  "regions": [
+    {
+      "mapRegion": "효자면",
+      "currentRegion": "효자면",
+      "sourceIds": [],
+      "sourceCount": 0,
+      "episodeCount": 0
+    },
+    {
+      "mapRegion": "은풍면",
+      "currentRegion": "은풍면",
+      "sourceIds": [
+        "park_seongjae",
+        "eunsan2"
+      ],
+      "sourceCount": 2,
+      "episodeCount": 6
+    },
+    {
+      "mapRegion": "감천면",
+      "currentRegion": "감천면",
+      "sourceIds": [
+        "lee_dongseop"
+      ],
+      "sourceCount": 1,
+      "episodeCount": 2
+    },
+    {
+      "mapRegion": "보문면",
+      "currentRegion": "보문면",
+      "sourceIds": [
+        "kim_hwasik"
+      ],
+      "sourceCount": 1,
+      "episodeCount": 3
+    },
+    {
+      "mapRegion": "용문면",
+      "currentRegion": "용문면",
+      "sourceIds": [
+        "namak_house",
+        "chunwoojae",
+        "an_junsik",
+        "park_huisik",
+        "choi_okja",
+        "yun_yeojeon",
+        "kwon_changsu"
+      ],
+      "sourceCount": 7,
+      "episodeCount": 20
+    },
+    {
+      "mapRegion": "예천읍",
+      "currentRegion": "예천읍",
+      "sourceIds": [
+        "bocheon",
+        "ryu_yeongha",
+        "an_manja"
+      ],
+      "sourceCount": 3,
+      "episodeCount": 7
+    },
+    {
+      "mapRegion": "유천면",
+      "currentRegion": "유천면",
+      "sourceIds": [
+        "go_myeongbun"
+      ],
+      "sourceCount": 1,
+      "episodeCount": 4
+    },
+    {
+      "mapRegion": "용궁면",
+      "currentRegion": "용궁면",
+      "sourceIds": [
+        "kim_jeongae",
+        "yun_changrak",
+        "eom_jongpil"
+      ],
+      "sourceCount": 3,
+      "episodeCount": 3
+    },
+    {
+      "mapRegion": "개포면",
+      "currentRegion": "개포면",
+      "sourceIds": [
+        "lee_sangbae"
+      ],
+      "sourceCount": 1,
+      "episodeCount": 1
+    },
+    {
+      "mapRegion": "호명면",
+      "currentRegion": "호명읍",
+      "sourceIds": [
+        "lee_ogyo"
+      ],
+      "sourceCount": 1,
+      "episodeCount": 1
+    },
+    {
+      "mapRegion": "지보면",
+      "currentRegion": "지보면",
+      "sourceIds": [
+        "seokmun_house",
+        "choi_chunae"
+      ],
+      "sourceCount": 2,
+      "episodeCount": 6
+    },
+    {
+      "mapRegion": "풍양면",
+      "currentRegion": "풍양면",
+      "sourceIds": [
+        "choi_eunja",
+        "kim_byeonghui"
+      ],
+      "sourceCount": 2,
+      "episodeCount": 5
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "park_seongjae",
+      "region": "은풍면",
+      "mapRegion": "은풍면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "박성재"
+      ],
+      "displayLabel": "박성재",
+      "episodeCount": 2,
+      "sourceFiles": [
+        "[1차 채록]260715 은풍준시 박성재.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차 채록]260715 은풍준시 박성재.hwp",
+          "paragraph": "P0050",
+          "quote": "박성재 \n05:30\n조부때 금당실서 상위 보곡으로 와가지고 보곡서 한 2년간 여기 사시다가 그래 우리 이 동사동으로 이제 오시다.\n이 카네 얘기만 들었지요. 그리고 한 100여 년 하면 됐어요 백한 곡이 어디예요?\n요 요 요놈에 상기 보곡이라고"
+        },
+        {
+          "kind": "official_location",
+          "title": "예천군 은풍면 지명유래",
+          "url": "https://www.ycg.kr/open.content/eunpung/tour/place/",
+          "summary": "은풍면의 마을 항목에 동사리를 명시한다. 은풍준시가 동사리 설명 아래에 나온다.",
+          "checkedDate": "2026-10-04"
+        }
+      ],
+      "note": "P0050의 현재 정착지 ‘동사동’을 은풍면 공식 지명유래의 동사리에 연결했다. P0052–P0053의 효자면은 조부가 먼저 살았던 상보곡의 위치를 설명하므로 현재 채록 지역으로 사용하지 않는다."
+    },
+    {
+      "sourceId": "bocheon",
+      "region": "예천읍",
+      "mapRegion": "예천읍",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "보천"
+      ],
+      "displayLabel": "보천",
+      "episodeCount": 3,
+      "sourceFiles": [
+        "[1차채록] 260707 서악사 보천스님.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록] 260707 서악사 보천스님.hwp",
+          "paragraph": "P0001",
+          "quote": "260707 서악사 보천스님"
+        },
+        {
+          "kind": "official_location",
+          "title": "한국학중앙연구원 예천 서악사 안내",
+          "url": "https://dh.aks.ac.kr/~heritage/wiki/index.php/예천_서악사",
+          "summary": "서악사 주소를 경상북도 예천군 예천읍 대심1길 160으로 명시한다.",
+          "checkedDate": "2026-10-04"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "ryu_yeongha",
+      "region": "예천읍",
+      "mapRegion": "예천읍",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "류영하"
+      ],
+      "displayLabel": "류영하",
+      "episodeCount": 1,
+      "sourceFiles": [
+        "[1차채록] 260707 예천장 류영하.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록] 260707 예천장 류영하.hwp",
+          "paragraph": "P0017",
+          "quote": "임경지 \n01:05\n예천읍으로 감천에서 예천읍으로 시집을 오셨구나 그럼 몇 년 몇 살에 시집을 가셨어요?"
+        }
+      ],
+      "note": "출생지는 감천면 진평1동이나, 예천읍으로 혼인·정착했다는 P0014–P0017을 기준으로 채록을 예천읍에 연결했다."
+    },
+    {
+      "sourceId": "choi_eunja",
+      "region": "풍양면",
+      "mapRegion": "풍양면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "최은자"
+      ],
+      "displayLabel": "최은자",
+      "episodeCount": 1,
+      "sourceFiles": [
+        "[1차채록] 260708 풍양면 노인복지회관 최은자.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록] 260708 풍양면 노인복지회관 최은자.hwp",
+          "paragraph": "P0001",
+          "quote": "260708 풍양면 노인복지회관 최은자"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "lee_sangbae",
+      "region": "개포면",
+      "mapRegion": "개포면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "이상배",
+        "손순희"
+      ],
+      "displayLabel": "이상배 · 손순희",
+      "episodeCount": 1,
+      "sourceFiles": [
+        "[1차채록] 260731 풍정라디오 이상배.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록] 260731 풍정라디오 이상배.hwp",
+          "paragraph": "P0081",
+          "quote": "그리고 이제 풍정리라는 자체가 우리 동민들 개포면민들만 풍정 도면 그 동네구나 이러는데 예천읍에만 가서 안동에 가서 풍정 동네 이 하면 모르잖아."
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "namak_house",
+      "region": "용문면",
+      "mapRegion": "용문면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "김종헌",
+        "김위배"
+      ],
+      "displayLabel": "김종헌 · 김위배",
+      "episodeCount": 2,
+      "sourceFiles": [
+        "[1차채록] 260731남악종택_김종헌, 김위배.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록] 260731남악종택_김종헌, 김위배.hwp",
+          "paragraph": "P0001",
+          "quote": "남악종택"
+        },
+        {
+          "kind": "official_location",
+          "title": "국가유산포털 예천 남악종택",
+          "url": "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1483702480000&pageNo=1_1_2_0",
+          "summary": "소재지를 경북 예천군 용문면 구계길 43-8 (구계리)로 명시한다.",
+          "checkedDate": "2026-10-04"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "chunwoojae",
+      "region": "용문면",
+      "mapRegion": "용문면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "권창용",
+        "조동임"
+      ],
+      "displayLabel": "권창용 · 조동임",
+      "episodeCount": 4,
+      "sourceFiles": [
+        "[1차채록]260717 춘우재 권창용 조동임.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록]260717 춘우재 권창용 조동임.hwp",
+          "paragraph": "P0092",
+          "quote": "농협 선거가 있었는데 이 사람이 당신은 농사만 짓기 하니까 좀 안 좀 문제가 있으니까 조합장을 한번 해보라 그러더라고 그 우리 용문면인데 우리 용문면에서 우리가 이게 좀 떨어져 있어요."
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "kim_jeongae",
+      "region": "용궁면",
+      "mapRegion": "용궁면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "김정애"
+      ],
+      "displayLabel": "김정애",
+      "episodeCount": 1,
+      "sourceFiles": [
+        "[1차채록]260722 용궁면 단골식당 김정애.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록]260722 용궁면 단골식당 김정애.hwp",
+          "paragraph": "P0001",
+          "quote": "260722 용궁면 단골식당 김정애"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "yun_changrak",
+      "region": "용궁면",
+      "mapRegion": "용궁면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "윤창락"
+      ],
+      "displayLabel": "윤창락",
+      "episodeCount": 0,
+      "sourceFiles": [
+        "[1차채록]260723 대은1리 윤창락.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록]260723 대은1리 윤창락.hwp",
+          "paragraph": "P0082",
+          "quote": "윤창락 \n08:30\n지금은 안 하지 새 젊은 이장이 들어와서 하고 있고 1년째 이장을 하면서 그 면 단위 이래 보면은 2장 20개 우리 용궁면이 20개 분학이니까 20개 2장이 모여가지고 내가 곡에서 이장협의회장을 한 또 7년을 했다고 이장하면서 그래 그래 해 나오다가 이제 이장의 안 하니까 그것도 그만두고 이제 뭐 집에 일에만 열심히 하고 있지."
+        }
+      ],
+      "note": "수록 만화는 0편이지만 원문과 이름·지역 정보는 유지한다."
+    },
+    {
+      "sourceId": "lee_ogyo",
+      "region": "호명읍",
+      "mapRegion": "호명면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "이오교"
+      ],
+      "displayLabel": "이오교",
+      "episodeCount": 1,
+      "sourceFiles": [
+        "[1차채록]260723 선몽대 이오교.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록]260723 선몽대 이오교.hwp",
+          "paragraph": "P0023",
+          "quote": "이오교 \n12:35\n나는 호명 백송이고 네네네 호명"
+        },
+        {
+          "kind": "official_location",
+          "title": "예천군 호명읍 연혁",
+          "url": "https://www.ycg.kr/open.content/homyeong/introduction/history/",
+          "summary": "2024년 2월 1일 호명읍 승격을 명시한다. 첨부 지도상 호명면의 현재 명칭이다.",
+          "checkedDate": "2026-10-04"
+        }
+      ],
+      "note": "원문은 호명 백송으로 명시하며, 현재 행정명은 호명읍이다. 첨부 지도에 표기된 호명면과 같은 지역 선택 항목에 연결한다. 예천군 호명읍 연혁은 2024-02-01 읍 승격을 명시한다."
+    },
+    {
+      "sourceId": "seokmun_house",
+      "region": "지보면",
+      "mapRegion": "지보면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "석문종택 종부"
+      ],
+      "displayLabel": "석문종택 종부",
+      "episodeCount": 3,
+      "sourceFiles": [
+        "[1차채록]260810 석문종택.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록]260810 석문종택.hwp",
+          "paragraph": "P0001",
+          "quote": "260810 석문종택"
+        },
+        {
+          "kind": "official_location",
+          "title": "한국학중앙연구원 예천 석문종택",
+          "url": "https://encykorea.aks.ac.kr/Article/E0076962",
+          "summary": "정의에서 경상북도 예천군 지보면에 있는 주택이라고 명시한다.",
+          "checkedDate": "2026-10-04"
+        }
+      ],
+      "note": "파일의 채록 장소명 ‘석문종택’을 한국학중앙연구원 소재지 정의의 지보면에 연결했다. 종부의 회고 속 용궁이라는 표현을 현재 행정구역으로 치환하지 않았다."
+    },
+    {
+      "sourceId": "lee_dongseop",
+      "region": "감천면",
+      "mapRegion": "감천면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "이동섭"
+      ],
+      "displayLabel": "이동섭",
+      "episodeCount": 2,
+      "sourceFiles": [
+        "[2차 채록] 260715 석송령 이동섭.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[2차 채록] 260715 석송령 이동섭.hwp",
+          "paragraph": "P0004",
+          "quote": "이동섭 \n01:30\n예 경상북도 예천군 감천면 천향리로 돼 있습니다."
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "eunsan2",
+      "region": "은풍면",
+      "mapRegion": "은풍면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "이재향",
+        "이옥희"
+      ],
+      "displayLabel": "이재향 · 이옥희",
+      "episodeCount": 4,
+      "sourceFiles": [
+        "[2차 채록]260715 은산2리 이재향, 이옥희.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[2차 채록]260715 은산2리 이재향, 이옥희.hwp",
+          "paragraph": "P0001",
+          "quote": "260715 은산2리 이재향, 이옥희"
+        },
+        {
+          "kind": "official_location",
+          "title": "예천군 은풍면 지명유래",
+          "url": "https://www.ycg.kr/open.content/eunpung/tour/place/",
+          "summary": "은풍면 마을 항목에 은산리를 명시한다. 원문 헤더의 은산2리와 연결한다.",
+          "checkedDate": "2026-10-04"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "eom_jongpil",
+      "region": "용궁면",
+      "mapRegion": "용궁면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "엄종필"
+      ],
+      "displayLabel": "엄종필",
+      "episodeCount": 2,
+      "sourceFiles": [
+        "[2차채록] 260714 용궁역 엄종필.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[2차채록] 260714 용궁역 엄종필.hwp",
+          "paragraph": "P0001",
+          "quote": "260714 용궁면 엄종필 [2차 채록]"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "an_junsik",
+      "region": "용문면",
+      "mapRegion": "용문면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "안준식"
+      ],
+      "displayLabel": "안준식",
+      "episodeCount": 4,
+      "sourceFiles": [
+        "[2차채록]260716 금당실 안준식.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[2차채록]260716 금당실 안준식.hwp",
+          "paragraph": "P0236",
+          "quote": "아니 오미봉 밑에 여기는 이제 건구만 쳐 건구만 치고 그런데 여기서 이제 주민들 이리 옮기자는 얘기를 옛날에 많이 했는데 여기서 용문면 전체를 위해서 제를 동제를 지내듯이 하자 면제를 지내자."
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "park_huisik",
+      "region": "용문면",
+      "mapRegion": "용문면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "박희식"
+      ],
+      "displayLabel": "박희식",
+      "episodeCount": 1,
+      "sourceFiles": [
+        "[2차채록]260722 금당실 박희식.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[2차채록]260722 금당실 박희식.hwp",
+          "paragraph": "P0294",
+          "quote": "박희식 \n46:54\n경로당에는 여기에 우리 용문면 경로당에 매일 한 30명, 2~30명 정도 모여가지고 각자 놀이, 놀이도 하고 뭐 장기 뜨고, 바둑 뜨고 이런 것도 하고 그렇게 보내죠. 경상이 뭐 다 비슷하니까 어디든지 다 그런 그런 식으로 보내거든."
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "kim_byeonghui",
+      "region": "풍양면",
+      "mapRegion": "풍양면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "김병희"
+      ],
+      "displayLabel": "김병희",
+      "episodeCount": 4,
+      "sourceFiles": [
+        "260708 풍양면 김병희[2차채록].hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "260708 풍양면 김병희[2차채록].hwp",
+          "paragraph": "P0001",
+          "quote": "260708 풍양면 김병희  [2차 채록]"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "choi_chunae",
+      "region": "지보면",
+      "mapRegion": "지보면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "최춘애"
+      ],
+      "displayLabel": "최춘애",
+      "episodeCount": 3,
+      "sourceFiles": [
+        "260723 지보면 신풍 2리 구룡동 최춘애.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "260723 지보면 신풍 2리 구룡동 최춘애.hwp",
+          "paragraph": "P0001",
+          "quote": "260723 지보면 신풍 2리 구룡동 최춘애"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "go_myeongbun",
+      "region": "유천면",
+      "mapRegion": "유천면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "고명분"
+      ],
+      "displayLabel": "고명분",
+      "episodeCount": 4,
+      "sourceFiles": [
+        "260722 유천면 사곡리 고명분.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "260722 유천면 사곡리 고명분.hwp",
+          "paragraph": "P0001",
+          "quote": "260722 유천면 고명분"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "kim_hwasik",
+      "region": "보문면",
+      "mapRegion": "보문면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "김화식"
+      ],
+      "displayLabel": "김화식",
+      "episodeCount": 3,
+      "sourceFiles": [
+        "260714 보문면 김화식 채록.txt"
+      ],
+      "evidence": [
+        {
+          "kind": "filename",
+          "sourceFile": "260714 보문면 김화식 채록.txt",
+          "quote": "260714 보문면 김화식 채록.txt"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "yun_sunok",
+      "region": null,
+      "mapRegion": null,
+      "status": "unconfirmed",
+      "statusLabel": "지역 미확인",
+      "names": [
+        "윤순옥"
+      ],
+      "displayLabel": "윤순옥",
+      "episodeCount": 4,
+      "sourceFiles": [
+        "260713 윤순옥 채록.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "260713 윤순옥 채록.hwp",
+          "paragraph": "P0001",
+          "quote": "2026.07.13 월 오후 4:54 ・ 55분 57초\n윤순옥 이은지 김영윤"
+        },
+        {
+          "kind": "transcript",
+          "sourceFile": "260713 윤순옥 채록.hwp",
+          "paragraph": "P0021",
+          "quote": "윤순옥 01:38\n저기 윤여정 씨 거기서, 사부 사부 1동"
+        },
+        {
+          "kind": "transcript",
+          "sourceFile": "260713 윤순옥 채록.hwp",
+          "paragraph": "P0052",
+          "quote": "윤순옥 \n08:01\n아니요. 저는 국민학교 졸업하고 저기 재건 중학교를 다녔어요.\n옳은 중학교를 못 가는 사람들 재건 중학교라고 용문에 있었어요.\n그런데 그것도 이제 집안이 형편이 힘들다 보니까 안 보내줘.\n그래 가지고 내가 막 몰래 교복 맞추고 예천 가서 교복 맞추고 해가지고 억지로 갔지 뭐 억지로 억지로 막 가다시피 해 가지고 2년 이 재건 중학교 2년을 졸업했어.\n졸업하고 객지 나갔어. 서울로 갔어."
+        }
+      ],
+      "note": "파일명과 헤더에는 읍·면이 없다. 용문 소재 재건중학교, 초간정 부근 용원학교, 사부1동(친정) 언급은 학업·출생지와 생애 이동의 근거이며 채록 장소/현 거주지의 읍·면을 직접 확정하지 못한다. 지역 미확인 항목으로 유지한다."
+    },
+    {
+      "sourceId": "choi_okja",
+      "region": "용문면",
+      "mapRegion": "용문면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "최옥자"
+      ],
+      "displayLabel": "최옥자",
+      "episodeCount": 2,
+      "sourceFiles": [
+        "[2차채록] 260707 용문면 하금곡1리 최옥자(김은지).hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[2차채록] 260707 용문면 하금곡1리 최옥자(김은지).hwp",
+          "paragraph": "P0001",
+          "quote": "260707 용문면 하금곡1리 최옥자"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "an_manja",
+      "region": "예천읍",
+      "mapRegion": "예천읍",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "안만자"
+      ],
+      "displayLabel": "안만자",
+      "episodeCount": 3,
+      "sourceFiles": [
+        "260707 예천읍 청복1리 안만자_1.hwp",
+        "260707 예천읍 청복1리 안만자_2.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "260707 예천읍 청복1리 안만자_1.hwp",
+          "paragraph": "P0001",
+          "quote": "260707 예천읍 청복1리 안만자"
+        },
+        {
+          "kind": "transcript",
+          "sourceFile": "260707 예천읍 청복1리 안만자_2.hwp",
+          "paragraph": "P0001",
+          "quote": "260707 예천읍 청복1리 안만자(김은지)"
+        }
+      ],
+      "note": "안만자 1편과 2편은 하나의 인물/채록 그룹으로 유지하며 두 파일의 예천읍 청복1리 명시를 함께 확인했다."
+    },
+    {
+      "sourceId": "yun_yeojeon",
+      "region": "용문면",
+      "mapRegion": "용문면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "윤여전"
+      ],
+      "displayLabel": "윤여전",
+      "episodeCount": 4,
+      "sourceFiles": [
+        "[2차채록] 260706 용문면 윤여전.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "filename",
+          "sourceFile": "[2차채록] 260706 용문면 윤여전.hwp",
+          "quote": "[2차채록] 260706 용문면 윤여전.hwp"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    },
+    {
+      "sourceId": "kwon_changsu",
+      "region": "용문면",
+      "mapRegion": "용문면",
+      "status": "confirmed",
+      "statusLabel": "확정",
+      "names": [
+        "권창수"
+      ],
+      "displayLabel": "권창수",
+      "episodeCount": 3,
+      "sourceFiles": [
+        "[1차채록] 260713 용문면 하금곡리 권창수 2차.hwp"
+      ],
+      "evidence": [
+        {
+          "kind": "transcript",
+          "sourceFile": "[1차채록] 260713 용문면 하금곡리 권창수 2차.hwp",
+          "paragraph": "P0001",
+          "quote": "260713 용문면 하금곡리 권창수 2차"
+        }
+      ],
+      "note": "채록 파일명·헤더 또는 본인의 명시적인 지역 설명으로 연결했다."
+    }
+  ]
+}
