@@ -1,0 +1,24 @@
+.person-metadata{margin-top:18px;display:grid;gap:12px;max-width:850px}
+.profile-facts-name{display:block;font-size:.94rem;margin-bottom:7px}
+.profile-facts-list{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0}
+.profile-fact{display:flex;align-items:baseline;gap:8px;min-width:0;font-size:.875rem;line-height:1.7}
+.profile-fact dt{color:var(--muted);white-space:nowrap}
+.profile-fact dd{margin:0;color:var(--ink);font-weight:600;overflow-wrap:anywhere}
+.person-biography{grid-column:1/-1;max-width:960px;border-top:1px solid var(--line);padding-top:22px}
+.person-biography h2{font-size:1.1rem;margin:0 0 14px;font-weight:650}
+.biography-member+.biography-member{margin-top:22px}
+.biography-member h3{font-size:1rem;margin:0 0 8px;color:var(--green)}
+.biography-member p{font-size:.96rem;line-height:1.9;margin:10px 0;word-break:keep-all;overflow-wrap:anywhere}
+.profile-basis{font-size:.75rem;line-height:1.8;color:var(--muted);margin:18px 0 0;max-width:850px;word-break:keep-all;overflow-wrap:anywhere}
+.profile-caveat{margin-top:8px}
+.profile-evidence{margin-top:15px;max-width:850px}
+.profile-evidence summary{font-size:.8rem;cursor:pointer;color:var(--green);width:fit-content}
+.profile-evidence .evidence{max-width:780px}
+.reader-context{margin:22px 0 26px;border-top:1px solid var(--line);padding-top:20px}
+.reader-context-section+.reader-context-section{margin-top:25px}
+.reader-context-section h3{font-size:.98rem;color:var(--green);margin:0 0 10px;font-weight:650}
+.reader-context-section p{font-size:.94rem;line-height:1.9;margin:10px 0;word-break:keep-all;overflow-wrap:anywhere}
+.context-evidence-heading{font-size:.8rem;font-weight:600;margin:24px 0 0;color:var(--muted)}
+[hidden]{display:none!important}
+@media(min-width:781px){.reader-content{grid-template-columns:minmax(0,1.65fr) minmax(320px,1fr)}}
+@media(max-width:780px){.person-metadata{margin-top:14px}.profile-facts-list{gap:6px 16px}.profile-fact{font-size:.82rem}.person-biography{padding-top:18px}.biography-member p{font-size:.94rem}.person-biography h2{font-size:1.05rem}.reader-context-section p{font-size:.98rem}}
