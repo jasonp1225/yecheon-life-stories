@@ -9,8 +9,8 @@
 .map-region{cursor:pointer;outline:none}
 .map-region path{fill:#344f5d;stroke:var(--white);stroke-width:5;stroke-linejoin:round;transition:fill .12s}
 .map-region text{fill:#fff;font-size:54px;font-weight:600;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;text-anchor:middle;pointer-events:none;user-select:none}
-.map-region:hover path,.map-region.selected path{fill:#886038}
-.map-region:focus-visible path{stroke:#ae7940;stroke-width:12;fill:#304f40}
+@media(hover:hover){.map-region:hover path{fill:#886038}}
+.map-region:focus-visible path{stroke:#ae7940;stroke-width:12}
 .map-region:focus-visible text{fill:#fff}
 .region-panel{padding:5px 0 0;min-width:0}
 .region-selector{display:flex;gap:12px;align-items:center;font-size:.875rem;color:var(--muted);margin-bottom:24px}

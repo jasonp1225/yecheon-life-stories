@@ -1,0 +1,39 @@
+.site-nav{max-width:1440px;margin:0 auto;padding:16px 42px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}
+.site-nav a{text-decoration:none}
+.site-brand{font-size:1rem;font-weight:700;white-space:nowrap;letter-spacing:-.025em}
+.site-menu{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.site-menu a{display:flex;align-items:center;min-height:44px;padding:9px 12px;font-size:.875rem;line-height:1.5;color:var(--muted);border-radius:4px}
+.site-menu a:hover{background:var(--leaf);color:var(--ink)}
+.site-menu a[aria-current="page"]{background:var(--green);color:var(--white)}
+.brand>div{min-width:0}
+.page-masthead .brand{min-width:0}
+.stories-shell,.directory-page{max-width:1440px;margin:0 auto;padding:32px 42px 64px}
+.directory-controls{display:flex;gap:12px;align-items:stretch;margin-bottom:28px;flex-wrap:wrap}
+.directory-region{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.875rem}
+.directory-region select{font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:5px;min-height:48px;background:var(--white);padding:8px 12px;max-width:100%}
+.directory-region select:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.directory-note{font-size:.875rem;line-height:1.8;color:var(--muted);max-width:900px;margin:0 0 24px}
+.directory-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.directory-person{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:5px;background:var(--white);padding:24px;text-decoration:none;min-width:0;color:var(--ink)}
+.directory-person:hover{border-color:#809281;background:var(--leaf)}
+.directory-person-heading{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.directory-person-heading h2{font-size:1.1rem;font-weight:600;line-height:1.5;margin:0;overflow-wrap:anywhere}
+.directory-person-count{font-size:.875rem;color:var(--muted);white-space:nowrap}
+.directory-place{font-size:.875rem;color:var(--muted);margin:12px 0 0}
+.directory-joint{font-size:.75rem;color:var(--muted);margin:4px 0 0}
+.directory-person-link{font-size:.875rem;color:var(--green);margin-top:auto;padding-top:24px}
+.information-page{max-width:980px;margin:0 auto;padding:32px 42px 64px}
+.information-section{padding:26px 0;border-bottom:1px solid var(--line)}
+.information-section:first-child{padding-top:0}
+.information-section:last-child{border-bottom:0}
+.information-section h2{font-size:1.25rem;font-weight:600;line-height:1.5;margin:6px 0 18px}
+.information-section p:not(.eyebrow){color:#566055;line-height:1.9;margin:12px 0}
+.information-section .download{margin-top:12px;margin-bottom:0}
+.home-page .map-explorer{border-bottom:0;padding-bottom:42px}
+.home-page .map-heading a{white-space:normal}
+.person-navigation{padding-top:22px}
+body>footer{margin-left:42px;margin-right:42px}
+@media(min-width:1440px){body>footer{margin-left:auto;margin-right:auto}}
+@media(max-width:1100px){.site-nav{padding-left:28px;padding-right:28px}.stories-shell,.directory-page{padding-left:28px;padding-right:28px}.directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.information-page{padding-left:28px;padding-right:28px}body>footer{margin-left:28px;margin-right:28px}}
+@media(max-width:780px){.site-nav{padding:14px 18px 12px;display:block}.site-brand{display:inline-block;margin-bottom:9px}.site-menu{gap:4px}.site-menu a{padding:8px 9px;font-size:.8rem}.stories-shell,.directory-page{padding:24px 18px 42px}.directory-controls{gap:10px;margin-bottom:24px}.directory-controls .search-box{flex-basis:100%}.directory-grid{gap:12px}.directory-person{padding:18px}.directory-person-heading h2{font-size:1rem}.information-page{padding:24px 18px 42px}.information-section h2{font-size:1.15rem}.information-section p:not(.eyebrow){font-size:.94rem}.home-page .map-explorer{padding-bottom:32px}body>footer{margin-left:18px;margin-right:18px}}
+@media(max-width:540px){.directory-grid{grid-template-columns:1fr}.directory-person-link{padding-top:18px}.page-masthead .collection-count{max-width:100px}.directory-region{flex:1}.directory-region select{min-width:0;flex:1}.site-menu{justify-content:space-between}.site-menu a{padding-left:6px;padding-right:6px}}
