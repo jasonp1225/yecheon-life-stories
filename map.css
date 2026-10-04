@@ -36,3 +36,4 @@
 @media(max-width:1100px){.map-explorer{padding-left:28px;padding-right:28px}.map-layout{gap:24px;grid-template-columns:minmax(280px,.85fr) minmax(0,1fr)}}
 @media(max-width:780px){.map-explorer{padding:24px 18px}.map-heading{align-items:start;flex-wrap:wrap;gap:10px}.map-layout{grid-template-columns:1fr;gap:22px}.map-board{padding:18px 12px}.yecheon-map{max-width:310px}.region-panel{padding:0}.region-selector{margin-bottom:16px}.region-summary{margin-bottom:12px}.region-note{margin-top:16px}.map-heading h2{font-size:1.1rem}.region-summary h3{font-size:1.15rem}}
 @media(prefers-reduced-motion:reduce){.map-region path{transition:none}}
+.region-person,.person{text-decoration:none}

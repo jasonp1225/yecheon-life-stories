@@ -8,7 +8,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%232e483e'/%3E%3Cpath d='M7 8h8v17H7zm10 0h8v17h-8z' fill='%23f9f4e9'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="readable.css">
-  <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="map.css?v=person-pages-1">
 </head>
 <body>
   <a class="skip" href="#stories">작품 목록으로 건너뛰기</a>
@@ -26,7 +26,7 @@
         <div class="region-summary"><h3 id="regionTitle">어느 동네의 이야기를 볼까요?</h3><p id="regionCount" aria-live="polite"></p></div>
         <div id="regionPeople" class="region-people"></div>
         <div id="regionEmpty" class="region-empty"><p id="regionEmptyText">지도에서 지역을 고르면 이야기를 들려준 분들이 나타납니다.<br>이름을 누르면 그분의 만화로 이어집니다.</p></div>
-        <p class="region-note">채록에 확인된 마을과 관련 거주지를 기준으로 연결했습니다. 여러 화자의 공동 채록은 한 묶음으로 표시합니다.</p>
+        <p class="region-note">이름을 누르면 그분의 이야기 페이지가 열립니다. 채록에 확인된 마을과 관련 거주지를 기준으로 연결했습니다. 여러 화자의 공동 채록은 한 묶음으로 표시합니다.</p>
         <button id="unknownRegion" class="region-unknown" type="button" hidden>지역 미확인 채록 보기</button>
       </div>
     </div>
@@ -55,8 +55,8 @@
   </dialog>
   <script src="catalog.js"></script>
   <script src="search.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=person-pages-1"></script>
   <script src="map-data.js"></script>
-  <script src="map.js"></script>
+  <script src="map.js?v=person-pages-1"></script>
 </body>
 </html>
