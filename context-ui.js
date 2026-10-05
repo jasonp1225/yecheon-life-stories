@@ -48,7 +48,7 @@
     metadata.replaceChildren(...facts);
     metadata.hidden = false;
     const heading = node('h2', '', '삶의 발자취');
-    const ageNote = node('p', 'profile-basis', '나이는 채록 당시의 기록을 기준으로 표시했습니다. 출생 연도만 확인되는 경우에는 기준 연도의 만 나이 범위를 적었습니다.');
+    const ageNote = node('p', 'profile-basis', '나이는 2026년 채록 시점을 기준으로 했습니다. 자세한 계산 근거는 아래에서 확인할 수 있습니다.');
     const evidence = node('details', 'profile-evidence');
     evidence.append(node('summary', '', '인물 정보와 생애사 근거'));
     if (profile.note) evidence.append(node('p', 'profile-basis profile-caveat', profile.note));

@@ -99,7 +99,6 @@
   if (!person) {
     document.title = '인물을 찾을 수 없습니다 · 예천의 장면들';
     $('personTitle').textContent = '인물을 찾을 수 없습니다';
-    $('personPlace').textContent = '지도에서 인물을 선택해 그분의 이야기 페이지를 열어 주세요.';
     $('storiesHeading').hidden = true;
     $('empty').hidden = false;
     $('emptyTitle').textContent = '선택한 인물 정보가 없습니다.';
@@ -120,9 +119,6 @@
   const returnUrl = 'index.html?region=' + encodeURIComponent(region) + '#mapHeading';
   $('backToMap').href = returnUrl;
   $('emptyBack').href = returnUrl;
-  $('personPlace').textContent = source?.placeLabel || '읍·면의 원문 근거 미확인';
-  $('locationNote').hidden = false;
-  if (!source?.region) $('locationNote').textContent = '이 채록의 읍·면은 원문 근거가 확인되지 않아 지도 지역에 연결하지 않았습니다.';
 
   const sourceLabel = episodes[0]?.sourceLabel;
   if (sourceLabel && sourceLabel !== person.label) {

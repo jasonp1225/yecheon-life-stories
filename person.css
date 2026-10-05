@@ -6,8 +6,6 @@
 .person-masthead h1{overflow-wrap:anywhere}
 .person-masthead .eyebrow a{text-decoration:none}
 .person-source{font-size:.875rem;line-height:1.65;margin:7px 0 0;color:var(--muted)}
-.person-introduction{grid-column:1/-1}
-.location-note{font-size:.75rem;color:var(--muted);margin:8px 0 0;line-height:1.8}
 .person-library{max-width:1180px;margin:0 auto;padding:32px 42px 64px}
 .person-library .empty p{max-width:650px;margin-left:auto;margin-right:auto}
 .person-library .empty .download{margin-top:12px;margin-bottom:0}
