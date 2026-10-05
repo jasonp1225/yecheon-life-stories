@@ -78,6 +78,7 @@
     $('nextStory').disabled = index === episodes.length - 1;
     if (!$('reader').open) $('reader').showModal();
     $('reader').scrollTop = 0;
+    $('readerNotes').scrollTo({top: 0, behavior: 'instant'});
   }
 
   $('closeReader').addEventListener('click', () => $('reader').close());

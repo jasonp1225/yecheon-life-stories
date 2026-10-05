@@ -22,5 +22,14 @@
 .reader-context-section p{font-size:.94rem;line-height:1.9;margin:10px 0;word-break:keep-all;overflow-wrap:anywhere}
 .context-evidence-heading{font-size:.8rem;font-weight:600;margin:24px 0 0;color:var(--muted)}
 [hidden]{display:none!important}
-@media(min-width:781px){.reader-content{grid-template-columns:minmax(0,1.65fr) minmax(320px,1fr)}}
+:root:has(.reader[open]){overflow:hidden;scrollbar-gutter:stable}
+.story-note:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+@media(min-width:781px){
+  .reader[open]{display:grid;grid-template-rows:auto minmax(0,1fr);height:95dvh;overflow:hidden}
+  .reader-content{grid-template-columns:minmax(0,1.65fr) minmax(320px,1fr);min-height:0;align-items:stretch;overflow:hidden}
+  .comic-stage{display:grid;grid-template-rows:minmax(0,1fr) auto;gap:16px;min-width:0;min-height:0}
+  .comic-stage img{width:100%;height:100%;min-width:0;min-height:0;object-fit:contain}
+  .reader-controls{margin-top:0}
+  .story-note{min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+}
 @media(max-width:780px){.person-metadata{margin-top:14px}.profile-facts-list{gap:6px 16px}.profile-fact{font-size:.82rem}.person-biography{padding-top:18px}.biography-member p{font-size:.94rem}.person-biography h2{font-size:1.05rem}.reader-context-section p{font-size:.98rem}}
