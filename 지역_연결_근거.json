@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "mappingBasis": "원문 근거 및 사용자의 지역 추가 확인",
-  "checkedDate": "2026-10-04",
+  "checkedDate": "2026-10-05",
   "sourceCount": 25,
-  "episodeCount": 74,
+  "episodeCount": 79,
   "confirmedSourceCount": 25,
   "unconfirmedSourceIds": [],
   "regions": [
@@ -22,7 +22,7 @@
         "eunsan2"
       ],
       "sourceCount": 2,
-      "episodeCount": 7
+      "episodeCount": 8
     },
     {
       "mapRegion": "감천면",
@@ -87,7 +87,7 @@
         "eom_jongpil"
       ],
       "sourceCount": 3,
-      "episodeCount": 6
+      "episodeCount": 7
     },
     {
       "mapRegion": "개포면",
@@ -96,7 +96,7 @@
         "lee_sangbae"
       ],
       "sourceCount": 1,
-      "episodeCount": 3
+      "episodeCount": 4
     },
     {
       "mapRegion": "호명면",
@@ -105,7 +105,7 @@
         "lee_ogyo"
       ],
       "sourceCount": 1,
-      "episodeCount": 0
+      "episodeCount": 1
     },
     {
       "mapRegion": "지보면",
@@ -125,7 +125,7 @@
         "kim_byeonghui"
       ],
       "sourceCount": 2,
-      "episodeCount": 4
+      "episodeCount": 5
     }
   ],
   "sources": [
@@ -225,7 +225,7 @@
         "최은자"
       ],
       "displayLabel": "최은자",
-      "episodeCount": 0,
+      "episodeCount": 1,
       "sourceFiles": [
         "[1차채록] 260708 풍양면 노인복지회관 최은자.hwp"
       ],
@@ -250,7 +250,7 @@
         "손순희"
       ],
       "displayLabel": "이상배 · 손순희",
-      "episodeCount": 3,
+      "episodeCount": 4,
       "sourceFiles": [
         "[1차채록] 260731 풍정라디오 이상배.hwp"
       ],
@@ -355,7 +355,7 @@
         "윤창락"
       ],
       "displayLabel": "윤창락",
-      "episodeCount": 0,
+      "episodeCount": 1,
       "sourceFiles": [
         "[1차채록]260723 대은1리 윤창락.hwp"
       ],
@@ -379,7 +379,7 @@
         "이오교"
       ],
       "displayLabel": "이오교",
-      "episodeCount": 0,
+      "episodeCount": 1,
       "sourceFiles": [
         "[1차채록]260723 선몽대 이오교.hwp"
       ],
@@ -466,7 +466,7 @@
         "이옥희"
       ],
       "displayLabel": "이재향 · 이옥희",
-      "episodeCount": 4,
+      "episodeCount": 5,
       "sourceFiles": [
         "[2차 채록]260715 은산2리 이재향, 이옥희.hwp"
       ],
