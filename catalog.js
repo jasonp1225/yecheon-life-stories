@@ -1714,10 +1714,9 @@ window.STORY_CATALOG = {
       "title": "못 한다던 조합장 선거, 무투표 당선",
       "message": "농사를 짓던 권창용이 아내의 출마 권유와 자신의 망설임, 형의 만류를 거쳐 조합장에 무투표로 당선됐고 약 12년을 맡았다.",
       "names": [
-        "권창용",
-        "조동임"
+        "권창용"
       ],
-      "displayPerson": "권창용 · 조동임",
+      "displayPerson": "권창용",
       "aliases": [
         "춘우재 권창용·조동임",
         "[1차채록]260717 춘우재 권창용 조동임.hwp"
@@ -2000,10 +1999,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/choi_chunae_03.png",
+      "image": "assets/choi_chunae_03.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "c682774bdb54d1da6b0cc0d30dfb6a8e5163b07cdb7f629d533a4193922bca30"
+      "sha256": "6c16fe87b202e397fbf21d897601181ad577b9f96bf24fd1f143df0ba5e3dfea"
     },
     {
       "id": "choi_chunae_04",
@@ -2055,10 +2054,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/choi_chunae_04.png",
+      "image": "assets/choi_chunae_04.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "9a10d7d011cfbe763b69b395a409c5c49bbf8425a53f3aff076606c40a8fdd5b"
+      "sha256": "1c8b23feb4d19c9f0b13f7a312cf2cc7acd788c12fb53b31918991bc8d979e29"
     },
     {
       "id": "choi_chunae_07",
@@ -2110,10 +2109,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/choi_chunae_07.png",
+      "image": "assets/choi_chunae_07.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "3fde2a177c6f7cbeecf4aad56eb2859d7034a455f84291f52678a0365de34349"
+      "sha256": "3fa0b2ab40a078f5b888d44c014942b4399a8bed9fa2b830398998aa1c64d81e"
     },
     {
       "id": "go_myeongbun_01",
@@ -2495,10 +2494,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/kim_hwasik_09.png",
+      "image": "assets/kim_hwasik_09.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "b8e81803b84cc7f4672c74c8557503ab34f146247d3b2a0105d857903d7c28b1"
+      "sha256": "571a2e7ec8011dd9171184e061f25342178d93bca23153668a6eff24c94d9d9b"
     },
     {
       "id": "yun_sunok_01",
@@ -2653,10 +2652,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/yun_sunok_10.png",
+      "image": "assets/yun_sunok_10.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "761298057c60e6ae7ffd92dd55a4202de0efee8ec3602f833a6b7c8a57d05b18"
+      "sha256": "d384db3a9e20116a055940ebbbf845259b49e851f1d118daaf42380fc0841fc0"
     },
     {
       "id": "yun_sunok_12",
@@ -2715,10 +2714,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/yun_sunok_12.png",
+      "image": "assets/yun_sunok_12.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "efcd4c0e0933eed4fbc2449f3a04bb138ebc9152bd3c70b82a40fdbd9f989bd4"
+      "sha256": "0ec6fcd68f23adcb6f00b3b9d0a7d399df3a38f591a909a94399ad18a85767b3"
     },
     {
       "id": "choi_okja_03",
@@ -3384,10 +3383,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/kwon_changsu_03.png",
+      "image": "assets/kwon_changsu_03.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "cae8f33a6156526cf7aae2f9e4b5bfcbc60014e645ac4c5e5f58f9e36a21f1ac"
+      "sha256": "79dd96555204ca01240eb22a6e648d10816baebfabfffcdaefb08d244737eae8"
     },
     {
       "id": "kwon_changsu_06",
@@ -3496,10 +3495,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/kwon_changsu_06.png",
+      "image": "assets/kwon_changsu_06.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "2291f1f951301bbb241d76c6634da31514b5351fb5199b114f2cb503d15c9974"
+      "sha256": "5483db751974fadf2cc8b5f3a8412199eb36990e9046d2f2176d9cd5c225e774"
     },
     {
       "id": "kwon_changsu_07",
@@ -3608,10 +3607,10 @@ window.STORY_CATALOG = {
         }
       ],
       "auditDecision": "selected",
-      "image": "assets/kwon_changsu_07.png",
+      "image": "assets/kwon_changsu_07.png?v=episode-numbers-1",
       "width": 1122,
       "height": 1402,
-      "sha256": "77ac3d904397c8273a0966a8b6e7aedef085e38ec8b0f769ff484d8ba75eca74"
+      "sha256": "cb3e9b12fe31f9db7126ea90b62872868215ccde51208f20821a958a79c5c8d1"
     },
     {
       "id": "park_seongjae_expand_01",
