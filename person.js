@@ -121,7 +121,7 @@
   $('emptyBack').href = returnUrl;
 
   const sourceLabel = episodes[0]?.sourceLabel;
-  if (sourceLabel && sourceLabel !== person.label) {
+  if (sourceLabel && !sourceLabel.includes('채록') && sourceLabel !== person.label) {
     $('personSource').textContent = sourceLabel;
     $('personSource').hidden = false;
   }
