@@ -25,11 +25,11 @@ body {
 
 .site-nav {
   position: sticky;
-  top: 16px;
+  top: 0;
   z-index: 20;
   width: calc(100% - 84px);
   max-width: 1356px;
-  margin: 18px auto 0;
+  margin: 0 auto;
   padding: 10px 22px;
   border: var(--glass-rim);
   border-radius: 22px;
@@ -56,11 +56,11 @@ body {
 
 .masthead {padding-top: 46px; padding-bottom: 30px; border-bottom: 0; gap: 30px;}
 h1 {
-  font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  font-family: var(--font-ui);
   font-size: clamp(1.9rem, 3vw, 2.45rem);
   font-weight: 700;
   line-height: 1.3;
-  letter-spacing: -.055em;
+  letter-spacing: -.035em;
   word-break: keep-all;
 }
 h1 span {font-family: inherit; letter-spacing: 0; margin-top: 9px; color: var(--muted); line-height: 1.65;}
@@ -226,7 +226,7 @@ footer {border-top-color: #cbdcd1; padding-top: 25px;}
 }
 @media (max-width: 780px) {
   body {background-attachment: scroll;}
-  .site-nav {top: 10px; width: calc(100% - 36px); margin-top: 12px; padding: 13px 14px 10px; border-radius: 20px;}
+  .site-nav {top: 0; width: calc(100% - 36px); margin-top: 0; padding: 13px 14px 10px; border-radius: 20px;}
   .site-brand {margin-bottom: 8px; font-size: 1rem;}
   .site-menu {gap: 4px;}
   .site-menu a {padding: 8px 10px; min-height: 44px; border-radius: 11px; font-size: .8rem;}
@@ -259,7 +259,7 @@ footer {border-top-color: #cbdcd1; padding-top: 25px;}
   .masthead {grid-template-columns: minmax(0, 1fr) auto; gap: 16px 12px;}
   .brand {gap: 10px;}
   .seal {width: 34px; height: 42px; font-size: 22px; border-radius: 11px;}
-  h1 {font-size: 1.6rem; letter-spacing: -.055em;}
+  h1 {font-size: 1.6rem; letter-spacing: -.035em;}
   .eyebrow {font-size: .7rem;}
   h1 span {font-size: .8rem;}
   .collection-count {min-width: 65px; padding: 11px 12px; border-radius: 16px;}
